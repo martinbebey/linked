@@ -20,10 +20,7 @@ public class MainActivity extends AppCompatActivity {
     /** Called when the user taps the SignIn button */
     public void signIn(View view)
     {
-//        Intent intent = new Intent(this, LoginActivity.class);
-////        EditText editText = (EditText) findViewById(R.id.editText);
-////        String message = "shit";
-////        intent.putExtra(EXTRA_MESSAGE, message);
-//        startActivity(intent);
+        Intent intent = new Intent(this, SignInActivity.class);
+        startActivity(intent);
     }
 }
