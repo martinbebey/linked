@@ -3,4 +3,6 @@
     <string name="app_description">Linked lets you easily connect with the people around you.</string>
     <string name="sign_in">SIGN IN</string>
     <string name="create_account">CREATE AN ACCOUNT</string>
+    <string name="username_box_text">Username</string>
+    <string name="password_box_text">Password</string>
 </resources>
