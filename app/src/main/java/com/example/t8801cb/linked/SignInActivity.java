@@ -18,7 +18,8 @@ public class SignInActivity extends AppCompatActivity
     private SQLiteDatabase mDb;
     private String username = "";
     private String password = "";
-    private TextView textView;
+    private TextView usertextView;
+    private TextView passtextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -44,10 +45,10 @@ public class SignInActivity extends AppCompatActivity
     /** Called when the user taps the SignIn button */
     public void signIn(View view)
     {
-        textView = (TextView)findViewById(R.id.username_box);
-        username = textView.getText().toString();
-        textView = (TextView)findViewById(R.id.password_box);
-        password = textView.getText().toString();
+        usertextView = (TextView)findViewById(R.id.username_box);
+        username = usertextView.getText().toString();
+        passtextView = (TextView)findViewById(R.id.password_box);
+        password = passtextView.getText().toString();
 
         Cursor cursor = mDb.rawQuery("SELECT username, password FROM users" + " WHERE username = '"+ username + "' AND password ='"+ password + "'", null);
 
@@ -55,6 +56,12 @@ public class SignInActivity extends AppCompatActivity
         {
             Intent intent = new Intent(this, HomeActivity.class);
             startActivity(intent);
+        }
+
+        else
+        {
+            usertextView.setText("");
+            passtextView.setText("");
         }
     }
 }
