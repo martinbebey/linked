@@ -16,7 +16,7 @@ import static android.database.sqlite.SQLiteDatabase.openOrCreateDatabase;
 
 public class SignInActivity extends AppCompatActivity
 {
-    private DatabaseHelper mDBHelper;
+    private DatabaseHelper mDBHelper; sofasfk''afkk
     private SQLiteDatabase mDb;
     private SQLiteOpenHelper openHelper;
     private String username = "";
