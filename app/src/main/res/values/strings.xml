@@ -8,7 +8,7 @@
     <string name="confirm_password_box_text">Confirm Password</string>
     <string name="display_name_box_label">Display Name</string>
     <string name="bio_box_label">About You</string>
-    <string name="hashtags_box_label">Hashtags</string>
+    <string name="hashtags_box_label">Tags</string>
     <string name="photo_label">Photo</string>
     <string name="create_account_button">CREATE ACCOUNT</string>
     <string name="photo_upload_button_text">Upload</string>
